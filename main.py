@@ -51,7 +51,7 @@ import os
 
 API_ID = 29403305
 API_HASH = "54c435573d0f2d9dada270a0cb493b36"
-BOT_TOKEN = "6745408107:AAF_FPnXGgcAZFtwix-CZ80zdgIOByfpbDE"
+BOT_TOKEN = "6292803136:AAEiuopjUGKuouVHTxf1unniOlx7YspY8Qw"
 bot = Client(
     "bot",
     bot_token=BOT_TOKEN,
