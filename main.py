@@ -63,7 +63,7 @@ bot = Client(
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by 🄼🄰🄷🄴🅂🄷")
 
-@bot.on_message(filters.command(["cancel"]))
+@bot.on_message(filters.command(["stop"]))
 async def cancel(_, m):
     editable = await m.reply_text("Canceling All process Plz wait")
     global cancel
