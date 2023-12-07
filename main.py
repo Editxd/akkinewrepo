@@ -59,7 +59,7 @@ bot = Client(
     api_hash=API_HASH
 )
 
-@bot.on_message(filters.command(["start"])& ~filters.edited)
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by 🄼🄰🄷🄴🅂🄷")
 
@@ -76,7 +76,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["link"])& ~filters.edited)
+@bot.on_message(filters.command(["link"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('Send link in **Name&link** format to download')
     input9: Message = await bot.listen(editable.chat.id)
